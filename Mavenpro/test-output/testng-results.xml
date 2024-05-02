@@ -5,30 +5,26 @@
       <![CDATA[The connection started]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-04-24T22:06:32 IST" name="Default suite" finished-at="2024-04-24T22:06:34 IST" duration-ms="1538">
+  <suite started-at="2024-04-30T14:00:59 IST" name="Default suite" finished-at="2024-04-30T14:00:59 IST" duration-ms="52">
     <groups>
     </groups>
-    <test started-at="2024-04-24T22:06:32 IST" name="Default test" finished-at="2024-04-24T22:06:34 IST" duration-ms="1538">
+    <test started-at="2024-04-30T14:00:59 IST" name="Default test" finished-at="2024-04-30T14:00:59 IST" duration-ms="52">
       <class name="Ft.Read">
-        <test-method is-config="true" signature="connection()[pri:0, instance:Ft.Read@6356695f]" started-at="2024-04-24T22:06:32 IST" name="connection" finished-at="2024-04-24T22:06:32 IST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="connection()[pri:0, instance:Ft.Read@6356695f]" started-at="2024-04-30T14:00:59 IST" name="connection" finished-at="2024-04-30T14:00:59 IST" duration-ms="9" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[The connection started]]>
             </line>
           </reporter-output>
         </test-method> <!-- connection -->
-        <test-method is-config="true" signature="url()[pri:0, instance:Ft.Read@6356695f]" started-at="2024-04-24T22:06:32 IST" name="url" finished-at="2024-04-24T22:06:34 IST" duration-ms="1506" status="FAIL">
-          <exception class="java.io.FileNotFoundException">
+        <test-method is-config="true" signature="url()[pri:0, instance:Ft.Read@6356695f]" started-at="2024-04-30T14:00:59 IST" name="url" finished-at="2024-04-30T14:00:59 IST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[.\demowork1.properties (The system cannot find the file specified)]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "this.driver" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.io.FileNotFoundException: .\demowork1.properties (The system cannot find the file specified)
-at java.base/java.io.FileInputStream.open0(Native Method)
-at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
-at genericLib.Readthedata.Readtd(Readthedata.java:16)
-at genericLib.Baseclass.url(Baseclass.java:68)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "this.driver" is null
+at genericLib.Baseclass.url(Baseclass.java:65)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -53,30 +49,26 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.io.FileNotFoundException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- url -->
-        <test-method is-config="true" signature="browsersetup(java.lang.String)[pri:0, instance:Ft.Read@6356695f]" started-at="2024-04-24T22:06:34 IST" name="browsersetup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1713976594412" status="SKIP">
+        <test-method is-config="true" signature="browsersetup(java.lang.String)[pri:0, instance:Ft.Read@6356695f]" started-at="2024-04-30T14:00:59 IST" name="browsersetup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1714465859700" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browsersetup -->
-        <test-method is-config="true" signature="meth()[pri:0, instance:Ft.Read@6356695f]" started-at="2024-04-24T22:06:34 IST" name="meth" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1713976594420" status="SKIP">
+        <test-method is-config="true" signature="meth()[pri:0, instance:Ft.Read@6356695f]" started-at="2024-04-30T14:00:59 IST" name="meth" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1714465859716" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- meth -->
-        <test-method signature="run()[pri:0, instance:Ft.Read@6356695f]" started-at="2024-04-24T22:06:34 IST" name="run" finished-at="2024-04-24T22:06:34 IST" duration-ms="0" status="SKIP">
-          <exception class="java.io.FileNotFoundException">
+        <test-method signature="run()[pri:0, instance:Ft.Read@6356695f]" started-at="2024-04-30T14:00:59 IST" name="run" finished-at="2024-04-30T14:00:59 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[.\demowork1.properties (The system cannot find the file specified)]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "this.driver" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.io.FileNotFoundException: .\demowork1.properties (The system cannot find the file specified)
-at java.base/java.io.FileInputStream.open0(Native Method)
-at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
-at genericLib.Readthedata.Readtd(Readthedata.java:16)
-at genericLib.Baseclass.url(Baseclass.java:68)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "this.driver" is null
+at genericLib.Baseclass.url(Baseclass.java:65)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -101,11 +93,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.io.FileNotFoundException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- run -->
-        <test-method is-config="true" signature="close(org.openqa.selenium.WebDriver)[pri:0, instance:Ft.Read@6356695f]" started-at="2024-04-24T22:06:34 IST" name="close" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1713976594463" status="SKIP">
+        <test-method is-config="true" signature="close(org.openqa.selenium.WebDriver)[pri:0, instance:Ft.Read@6356695f]" started-at="2024-04-30T14:00:59 IST" name="close" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1714465859798" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->

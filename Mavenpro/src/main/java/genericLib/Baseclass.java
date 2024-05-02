@@ -8,6 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Reporter;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -20,7 +21,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 public class Baseclass {
-	public WebDriver driver;
+	WebDriver driver;
 	public ExtentSparkReporter sparkReporter;
 	public ExtentReports report;
 	public ExtentTest test;
@@ -62,13 +63,10 @@ public class Baseclass {
 	@BeforeTest
 	public void url() throws Throwable
 	{
-		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
-		Readthedata redd =new Readthedata();
-		redd.Readtd();
-		
+		driver.get(null);
 	}
-	@AfterSuite
+	@AfterMethod
 	public void close(WebDriver driver)
 	{
 		driver.close();
